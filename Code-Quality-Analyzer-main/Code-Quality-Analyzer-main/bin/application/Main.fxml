@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.WebView?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17.0.1"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="application.FileChooserController">
+
+    <top>
+        <HBox spacing="20" alignment="CENTER">
+            <padding>
+                <Insets top="10" right="10" bottom="10" left="10"/>
+            </padding>
+
+            <Button fx:id="uploadButton" text="Upload Java File" onAction="#onUploadClick"/>
+            <Label fx:id="statusLabel" text="No file selected"/>
+        </HBox>
+    </top>
+
+    <center>
+        <WebView fx:id="reportView"/>
+    </center>
+
+</BorderPane>
